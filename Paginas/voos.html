@@ -5,14 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voos</title>
+
+    <style>
+            .faixa ul { 
+                display: flex;}
+            .faixa ul li {
+                list-style-type: none;
+                padding-right: 14px;}
+            .espacado150px { 
+                padding-right: 150px;}
+            .espacado55px { 
+                padding-right: 55px;}
+    </style>
+
 </head>
+
 <body>
     <header>
         <h1>BORA DECOLAR</h1>
-        <h2>Voos</h2>
+        <h2>Voos Nacionais e Internacionais</h2>
     </header>
 
-    <nav>
+    <nav class="faixa">
         <ul>
             <li><a href="promocao.html">PROMOÇÃO</a></li>
             <li><a href="hoteis.html">HOTEIS</a></li>
@@ -23,5 +37,42 @@
             <li><a href="login.html">LOGIN</a></li>
         </ul>
     </nav>
+
+    <form>
+
+        <strong class="espacado55px">PASSAGENS AEREAS</strong>
+
+        <input type="radio" name="idaevolta" id="passgIda">
+        <label for="passgIda">Ida</label>
+        <input type="radio" name="idaevolta" id="passgIdaeVolta">
+        <label class="espacado55px" for="passgIdaeVolta">Ida e Volta</label>
+        
+        <label for="dataIda">Ida</label>
+        <input type="date" name="datadevoos" id="dataIda">
+        <label for="dataVolta">Volta</label>
+        <input type="date" name="datadevoos" id="dataVolta"><br>
+
+        <label class="espacado150px" for="origem">Origem</label>
+        <label class="espacado150px" for="destino">Destino</label>
+        <label for="quantpessoas">Passageiros</label><br>
+
+        <input type="text" name="origemdestino" id="origem">
+        <span>&emsp;</span>
+        <input type="text" name="origemdestino" id="destino">
+        <span>&emsp;&nbsp;</span>
+        <select name="pessoas" id="quantpessoas">
+            <option value="1">01 Passageiro</option>
+            <option value="2">02 Passageiros</option>
+            <option value="3">03 Passageiros</option>
+            <option value="4">04 Passageiros</option>
+            <option value="5">05 Passageiro</option>
+            <option value="6">06 Passageiros</option>
+            <option value="7">07 Passageiros</option>
+            <option value="8">08 Passageiros</option>
+        </select>
+        <span>&emsp;&emsp;</span>
+        <input type="submit" value="Procurar Passagens">
+    </form>
+
 </body>
 </html>
