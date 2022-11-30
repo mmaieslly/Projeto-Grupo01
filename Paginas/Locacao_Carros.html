@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voos</title>
+    <title>Aluguel de Carros</title>
+
 
     <style>
         .faixa ul { 
             display: flex;}
         .faixa ul li {
-          list-style-type: none;
+            list-style-type: none;
             padding-right: 14px;}
         .espacado150px { 
             padding-right: 150px;}
@@ -23,11 +24,10 @@
     </style>
 
 </head>
-
 <body>
     <header>
         <h1>BORA DECOLAR</h1>
-        <h2>Voos Nacionais e Internacionais</h2>
+        <h2>Aluguel de Carros</h2>
     </header>
 
     <nav class="faixa">
@@ -40,76 +40,73 @@
             <li><a href="quem_somos.html">QUEM SOMOS</a></li>
             <li><a href="login.html">LOGIN</a></li>
         </ul>
+
+        <p><a href="voos.html">Página Inicial</a></p>
+
     </nav>
 
     <form>
-        <strong class="espacado55px">PASSAGENS AEREAS</strong>
+        <strong class="espacado55px">LOCAÇÃO CARROS</strong>
 
-        <input type="radio" name="idaevolta" id="passgIda">
-        <label for="passgIda">Ida</label>
-        <input type="radio" name="idaevolta" id="passgIdaeVolta">
-        <label class="espacado55px" for="passgIdaeVolta">Ida e Volta</label>
+        <input type="checkbox" id="seguro">
+        <label for="seguro">Seguro</label>
+        <input type="checkbox" id="carro_reserva">
+        <label class="espacado55px" for="carro_reserva">Carro Reserva</label>
         
-        <label for="dataIda">Ida</label>
-        <input type="date" name="datadevoos" id="dataIda">
-        <label for="dataVolta">Volta</label>
-        <input type="date" name="datadevoos" id="dataVolta"><br>
+        <label for="locacao_retirada">Retirada</label>
+        <input type="datetime-local" name="date_localcao" id="locacao_retirada">
+        <label for="locacao_devolucao">Devolucao</label>
+        <input type="datetime-local" name="date_localcao" id="locacao_devolucao"><br>
 
         <label class="espacado150px" for="origem">Origem</label>
         <label class="espacado150px" for="destino">Destino</label>
-        <label for="quantpessoas">Passageiros</label><br>
+        <label for="quantpessoas">Direcao</label><br>
 
         <input type="text" name="origemdestino" id="origem">
         <span>&emsp;</span>
         <input type="text" name="origemdestino" id="destino">
         <span>&emsp;&nbsp;</span>
         <select name="pessoas" id="quantpessoas">
-            <option value="1">01 Passageiro</option>
-            <option value="2">02 Passageiros</option>
-            <option value="3">03 Passageiros</option>
-            <option value="4">04 Passageiros</option>
-            <option value="5">05 Passageiro</option>
-            <option value="6">06 Passageiros</option>
-            <option value="7">07 Passageiros</option>
-            <option value="8">08 Passageiros</option>
+            <option value="1">01 Motorista</option>
+            <option value="2">02 Motorista</option>
         </select>
         <span>&emsp;&emsp;</span>
-        <input type="submit" value="Procurar Passagens">
+        <input type="submit" value="Procurar Carro">
     </form>
 
     <section class="imagens">
-        <center><p>DESTINOS EM ALTA</p></center>
+        <center><p>Ande de Modo Seguro</p></center>
 
-        <img src="../Imagens/IMG/Voos/voos01.jpg"/>
-        <img src="../Imagens/IMG/Voos/voos02.jpg"/>
-        <img src="../Imagens/IMG/Voos/voos03.jpg"/>
-        <img src="../Imagens/IMG/Voos/voos04.jpg"/>
-        <img src="../Imagens/IMG/Voos/voos05.jpg"/>
+        <img src="../Imagens/IMG/Locacao_carro/208ALLURE2-min.png"/>
+        <img src="../Imagens/IMG/Locacao_carro/ARGO1.png"/>
+        <img src="../Imagens/IMG/Locacao_carro/COMPASST270_1.png"/>
+        <img src="../Imagens/IMG/Locacao_carro/COMPASSTD350_1.png"/>
+        <img src="../Imagens/IMG/Locacao_carro/COROLLACROSSXRV-min.png"/>
 
         <div>
-            <span>&emsp;&emsp;&emsp;SALVADOR </span>
-            <span>&emsp;&emsp;&emsp;&emsp; PORTO DE GALINHAS</span>
-            <span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;PARIS</span>
-            <span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; NOVA IORQUE </span>
-            <span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ROMA</span>
+            <span>&emsp;PEGEOUT 208 </span>
+            <span>&emsp;&emsp;&emsp;&emsp;&emsp; ARGO</span>
+            <span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;COMPASS TD 270</span>
+            <span>&emsp;&emsp;&emsp;&emsp;&emsp; COMPASS TD 350 </span>
+            <span>&emsp;&emsp;&emsp;&emsp;&emsp; COROLA</span>
         </div>
 
     </section>
     <section class="imagens">
-        <center><p>DESTINOS EM ALTA</p></center>
+        <center><p>Carros em Alta</p></center>
 
-        <img src="../Imagens/IMG/Voos/voos01.jpg"/>
-        <img src="../Imagens/IMG/Voos/voos02.jpg"/>
-        <img src="../Imagens/IMG/Voos/voos03.jpg"/>
-        <img src="../Imagens/IMG/Voos/voos04.jpg"/>
-        <img src="../Imagens/IMG/Voos/voos05.jpg"/>
+        <img src="../Imagens/IMG/Locacao_carro/GOL1.png"/>
+        <img src="../Imagens/IMG/Locacao_carro/KWID1.png"/>
+        <img src="../Imagens/IMG/Locacao_carro/L200-TRITON-GLS.png"/>
+        <img src="../Imagens/IMG/Locacao_carro/LOGAN1.png"/>
+        <img src="../Imagens/IMG/Locacao_carro/MOBI3.png"/>
 
         <div>
-            <span>&emsp;&emsp;&emsp;SALVADOR </span>
-            <span>&emsp;&emsp;&emsp;&emsp; PORTO DE GALINHAS</span>
-            <span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;PARIS</span>
-            <span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; NOVA IORQUE </span>
-            <span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ROMA</span>
+            <span>&emsp;&emsp;&emsp;GOL1.0 </span>
+            <span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; KWID</span>
+            <span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;L200</span>
+            <span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; LOGAN </span>
+            <span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; MOBI</span>
         </div>
 
     </section>
@@ -135,5 +132,7 @@
 
     </footer>
 
+</body>
+</html>
 </body>
 </html>

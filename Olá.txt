@@ -2,14 +2,12 @@ Somos o Grupo 01
 
 Nosso projeto é uma agencia de viagens completa com:
 
--Venda de Passagens Aéreas
+-Venda de Passagens Aéreas-ok
 -Busca de Acomodações
--Pacotes de Viagem
--Promoçõessss
--Aluguel de Automóveis
--Area de Login
-
-
-teste
+-Pacotes de Viagem-ok
+-Promoções
+-Aluguel de Automóveis-ok
+-Area de Login-ok
+-Area de Cadastro-ok
 
 Esperamos que goste :)
