@@ -6,8 +6,8 @@ Nosso projeto é uma agencia de viagens completa com:
 -Busca de Acomodações
 -Pacotes de Viagem-ok
 -Promoções
--Aluguel de Automóveis
+-Aluguel de Automóveis-ok
 -Area de Login-ok
--Area de Cadastro
+-Area de Cadastro-ok
 
 Esperamos que goste :)
