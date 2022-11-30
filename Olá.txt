@@ -10,7 +10,4 @@ Nosso projeto é uma agencia de viagens completa com:
 -Area de Login-ok
 -Area de Cadastro
 
-
-teste
-
 Esperamos que goste :)
