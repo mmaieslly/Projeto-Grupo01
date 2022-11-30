@@ -5,7 +5,7 @@ Nosso projeto é uma agencia de viagens completa com:
 -Venda de Passagens Aéreas-ok
 -Busca de Acomodações
 -Pacotes de Viagem-ok
--Promoções
+-Promoções-ok
 -Aluguel de Automóveis-ok
 -Area de Login-ok
 -Area de Cadastro-ok
