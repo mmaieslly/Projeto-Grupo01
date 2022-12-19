@@ -4,145 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voos</title>
-
-    <style>
-        .faixa ul { 
-            display: flex;}
-        .faixa ul li {
-          list-style-type: none;
-            padding-right: 14px;}
-        .espacado150px { 
-            padding-right: 150px;}
-        .espacado55px { 
-            padding-right: 55px;}
-        .imagens img{
-            height:150px;
-            width: 180px;
-            padding-right: 14px;}
-    </style>
-
+    <title>Bora Decolar - Voos</title>
+    <link href="../Css/voos.css" rel="stylesheet">
 </head>
-
 <body>
     <header>
-        <h1>BORA DECOLAR</h1>
-        <h2>Voos Nacionais e Internacionais</h2>
+        <nav>
+            <img src="../Imagens/IMG/logo-removebg-preview.png" class="logo" alt="Logo Bora Decolar" width="280px" height="140px"/>
+
+            <ul>
+                <li><a href="promocao.html">Promoção</a></li>
+                <li><a href="hoteis.html">Hotéis</a></li>
+                <li><a href="pacotes.html">Pacotes</a></li>
+                <li><a href="voos.html">Voos</a></li>
+                <li><a href="Locacao_Carros.html">Aluguel de Carros</a></li>
+                <li><a href="quem_somos.html">Quem Somos</a></li>
+                <li>
+                    <a href="login.html"><img src="../Imagens/IMG/Captura_de_tela_2022-12-18_162202-removebg-preview.png" alt="Login" width="70px" height="70px"/></a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <nav class="faixa">
-        <ul>
-            <li><a href="promocao.html">PROMOÇÃO</a></li>
-            <li><a href="hoteis.html">HOTEIS</a></li>
-            <li><a href="pacotes.html">PACOTES</a></li>
-            <li><a href="voos.html">VOOS</a></li>
-            <li><a href="Locacao_Carros.html">ALUGUEL DE CARROS</a></li>
-            <li><a href="quem_somos.html">QUEM SOMOS</a></li>
-            <li><a href="login.html">LOGIN</a></li>
-        </ul>
-    </nav>
+    <main>
+        <section>
+            <form>
+                <strong>PASSAGENS AEREAS</strong>
+                
+                <div class="switch__container">
+                    <span>Ida</span>
+                    <input id="switch-shadow" class="switch switch--shadow" type="checkbox">
+                    <label for="switch-shadow"></label>
+                    <span>Ida e Volta</span>
+                </div>
 
-    <form>
-        <strong class="espacado55px">PASSAGENS AEREAS</strong>
+                <div class="ida_volta">
+                    <label for="dataIda">Partida</label>
+                    <input type="date" name="datadevoos" id="dataIda" class="data_input">
+                    <label for="dataVolta">Retorno</label>
+                    <input type="date" name="datadevoos" id="dataVolta" class="data_input">
+                </div>
 
-        <input type="radio" name="idaevolta" id="passgIda">
-        <label for="passgIda">Ida</label>
-        <input type="radio" name="idaevolta" id="passgIdaeVolta">
-        <label class="espacado55px" for="passgIdaeVolta">Ida e Volta</label>
+                <div class="origem">
+                    <label for="origem">Origem</label>
+                    <input type="text" name="origemdestino" id="origem" class="local_input" placeholder="Aeroporto de Origem">
+                </div>
+
+                <img src="../Imagens/IMG/Captura_de_tela_2022-12-18_205713-removebg-preview.png" height="30px"/>
+
+                <div class="destino">
+                    <label for="destino">Destino</label>
+                    <input type="text" name="origemdestino" id="destino" class="local_input" placeholder="Aeroporto de Destino">
+                </div>
+
+                <div class="passageiros">
+                    <label for="quantpessoas">Passageiros</label>
+                    <select name="pessoas" id="quantpessoas" class="num_input">
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                        <option value="5">05</option>
+                        <option value="6">06</option>
+                        <option value="7">07</option>
+                        <option value="8">08</option>
+                        <option value="9">09</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+
+                <input type="submit" value="Procurar Passagens" class="button">
+
+            </form>
+        </section>
+
+
+    </main>
         
-        <label for="dataIda">Ida</label>
-        <input type="date" name="datadevoos" id="dataIda">
-        <label for="dataVolta">Volta</label>
-        <input type="date" name="datadevoos" id="dataVolta"><br>
 
-        <label class="espacado150px" for="origem">Origem</label>
-        <label class="espacado150px" for="destino">Destino</label>
-        <label for="quantpessoas">Passageiros</label><br>
-
-        <input type="text" name="origemdestino" id="origem">
-        <span>&emsp;</span>
-        <input type="text" name="origemdestino" id="destino">
-        <span>&emsp;&nbsp;</span>
-        <select name="pessoas" id="quantpessoas">
-            <option value="1">01 Passageiro</option>
-            <option value="2">02 Passageiros</option>
-            <option value="3">03 Passageiros</option>
-            <option value="4">04 Passageiros</option>
-            <option value="5">05 Passageiro</option>
-            <option value="6">06 Passageiros</option>
-            <option value="7">07 Passageiros</option>
-            <option value="8">08 Passageiros</option>
-        </select>
-        <span>&emsp;&emsp;</span>
-        <input type="submit" value="Procurar Passagens">
-    </form>
-
-    <section class="imagens">
-        <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  DESTINOS EM ALTA</p>
-
-        <img src="../Imagens/IMG/Voos/voos01.jpg"/>
-        <img src="../Imagens/IMG/Voos/voos02.jpg"/>
-        <img src="../Imagens/IMG/Voos/voos03.jpg"/>
-        <img src="../Imagens/IMG/Voos/voos04.jpg"/>
-        <img src="../Imagens/IMG/Voos/voos05.jpg"/>
-
-        <div>
-            <span>&emsp;&emsp;&emsp;SALVADOR </span>
-            <span>&emsp;&emsp;&emsp;&emsp; PORTO DE GALINHAS</span>
-            <span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;PARIS</span>
-            <span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; NOVA IORQUE </span>
-            <span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ROMA</span>
-        </div>
-
-    </section>
-    <section class="imagens">
-        <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  DESTINOS EM ALTA</p>
-
-        <img src="../Imagens/IMG/Voos/voos01.jpg"/>
-        <img src="../Imagens/IMG/Voos/voos02.jpg"/>
-        <img src="../Imagens/IMG/Voos/voos03.jpg"/>
-        <img src="../Imagens/IMG/Voos/voos04.jpg"/>
-        <img src="../Imagens/IMG/Voos/voos05.jpg"/>
-
-        <div>
-            <span>&emsp;&emsp;&emsp;SALVADOR </span>
-            <span>&emsp;&emsp;&emsp;&emsp; PORTO DE GALINHAS</span>
-            <span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;PARIS</span>
-            <span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; NOVA IORQUE </span>
-            <span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ROMA</span>
-        </div>
-
-    </section>
-    <br><br>
-    <footer>
-        <table>
-            <tr>
-                <td>
-                    <ul>
-                        <li><a href="promocao.html">PROMOÇÃO</a></li>
-                        <li><a href="hoteis.html">HOTEIS</a></li>
-                        <li><a href="pacotes.html">PACOTES</a></li>
-                        <li><a href="voos.html">VOOS</a></li>
-                        <li><a href="Locacao_Carros.html">ALUGUEL DE CARROS</a></li>
-                        <li><a href="quem_somos.html">QUEM SOMOS</a></li>
-                        <li><a href="login.html">LOGIN</a></li>
-                    </ul>
-                </td>
-              
-                <td>
-                    <center>
-                        <h2>BORA DECOLAR</h2>
-                        <h4>AGENCIA DE VIAGENS</h4>
-                        <p>O Mundo é Nosso!<br>CNPJ XX.XXX.XXX/0001-XX<br>ENDEREÇO XXXX XXXX XXXXXX</p>
-            
-                        <small>TODOS OS DIREITOS RESERVADOS © BORA DECOLAR AGÊNCIA DE VIAGENS</small>
-                    </center>
-                </td> 
-            </tr>
-           
-          </table>
-
-    </footer>
 
 </body>
 </html>
