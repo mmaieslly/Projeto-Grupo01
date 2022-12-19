@@ -1,4 +1,6 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 /* -----------RESET----------------*/
 * {
   margin: 0;
@@ -7,7 +9,7 @@
 }
 body {
 font-size: 1.6rem;
-font-family: 'Roboto', sans-serif;
+font-family: 'Bebas Neue', cursive;
 }
 a {
   text-decoration: none;
