@@ -199,3 +199,31 @@ form strong{
     align-items: center;
 }
   
+.anuncios{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 6rem;
+    flex-wrap: wrap;
+  }
+  
+  .titulo_anuncio{
+    display: block;
+    text-align: center;
+    background-color: #ff914d;
+    color: white;
+  }
+  
+  .caixa_anuncio{
+    text-align: center;
+    background-color: #efeae4;
+    border-radius: 8px;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .imagem_anuncio{
+    height: 13rem;
+    width: 19rem;
+    cursor: pointer;
+  }
+  
