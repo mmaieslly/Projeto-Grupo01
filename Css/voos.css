@@ -240,6 +240,7 @@ form strong{
 .imagem_anuncio{
   height: 13rem;
   width: 19rem;
+  cursor: pointer;
 }
 
 /*FOOTER*/
