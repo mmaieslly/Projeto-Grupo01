@@ -144,10 +144,15 @@ form strong{
 }
 
 /* Datas */
+#espaco{
+  display: none;
+}
+
 .ida_volta{
   display: flex;
   gap: 10px;
   align-items: center;
+  justify-content: center;
 }
 
 .data_input{

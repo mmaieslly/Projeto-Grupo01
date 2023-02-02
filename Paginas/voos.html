@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bora Decolar - Voos</title>
     <link href="../Css/voos.css" rel="stylesheet">
-    <script src="../JavaScript/monica.js"></script>
+    <script src="../JavaScript/monica.js" defer></script>
 </head>
 <body>
     <header>
@@ -27,107 +27,110 @@
         </nav>
     </header>
 
-    <main>
-        <section>
-            <form>
-                <strong>PASSAGENS AEREAS</strong>
-                
-                <div class="switch__container">
-                    <span>Ida</span>
-                    <input id="switch-shadow" class="switch switch--shadow" type="checkbox">
-                    <label for="switch-shadow"></label>
-                    <span>Ida e Volta</span>
-                </div>
+<main>
+    <section>
+        <form>
+            <strong>PASSAGENS AEREAS</strong>
+            
+            <div class="switch__container">
+                <span>Ida</span>
+                <input id="switch-shadow" class="switch switch--shadow" type="checkbox" name="idaVolta" checked="true">
+                <label for="switch-shadow" id="tese"></label>
+                <span>Ida e Volta</span>
+            </div>  
 
-                <div class="ida_volta">
-                    <label for="dataIda">Partida</label>
-                    <input type="date" name="datadevoos" id="dataIda" class="data_input">
+            <div class="ida_volta">
+                <span id="espaco">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span>
+                <label for="dataIda">Partida</label>
+                <input type="date" name="datadevoos" id="dataIda" class="data_input">
+                <div id="volta">
                     <label for="dataVolta">Retorno</label>
-                    <input type="date" name="datadevoos" id="dataVolta" class="data_input">
+                    <input type="date" name="datadevoos" id="dataVolta" class="data_input" min="2023-01-01">
                 </div>
-
-                <div class="origem">
-                    <label for="origem">Origem</label>
-                    <input type="text" name="origemdestino" id="origem" class="local_input" placeholder="Aeroporto de Origem">
-                </div>
-
-                <img src="../Imagens/IMG/Voos/aviao_de_papel.png" height="30px"/>
-
-                <div class="destino">
-                    <label for="destino">Destino</label>
-                    <input type="text" name="origemdestino" id="destino" class="local_input" placeholder="Aeroporto de Destino">
-                </div>
-
-                <div class="passageiros">
-                    <label for="quantpessoas">Passageiros</label>
-                    <select name="pessoas" id="quantpessoas" class="num_input">
-                        <option value="1">01</option>
-                        <option value="2">02</option>
-                        <option value="3">03</option>
-                        <option value="4">04</option>
-                        <option value="5">05</option>
-                        <option value="6">06</option>
-                        <option value="7">07</option>
-                        <option value="8">08</option>
-                        <option value="9">09</option>
-                        <option value="10">10</option>
-                    </select>
-                </div>
-
-                <input type="submit" value="Procurar Passagens" class="button">
-
-            </form>
-        </section>
-
-        
-        <P class="titulo_anuncio">DESTINOS EM ALTA</P>
-        <div class="anuncios">
-            <div class="caixa_anuncio">
-                <img src="../Imagens/IMG/Voos/voos01.jpg" class="imagem_anuncio"/>
-                <p>SALVADOR</p>
             </div>
-            <div class="caixa_anuncio">
-                <img src="../Imagens/IMG/Voos/voos02.jpg" class="imagem_anuncio"/>
-                <p>PORTO DE GALINHAS</p>
+
+            <div class="origem">
+                <label for="origem">Origem</label>
+                <input type="text" name="origemdestino" id="origem" class="local_input" placeholder="Aeroporto de Origem">
             </div>
-            <div class="caixa_anuncio">
-                <img src="../Imagens/IMG/Voos/voos03.jpg" class="imagem_anuncio"/>
-                <p>PARIS</p>
+
+            <img src="../Imagens/IMG/Voos/aviao_de_papel.png" height="30px"/>
+
+            <div class="destino">
+                <label for="destino">Destino</label>
+                <input type="text" name="origemdestino" id="destino" class="local_input" placeholder="Aeroporto de Destino">
             </div>
-            <div class="caixa_anuncio">
-                <img src="../Imagens/IMG/Voos/voos04.jpg" class="imagem_anuncio"/>
-                <p>NOVA IORQUE</p>
+
+            <div class="passageiros">
+                <label for="quantpessoas">Passageiros</label>
+                <select name="pessoas" id="quantpessoas" class="num_input">
+                    <option value="1">01</option>
+                    <option value="2">02</option>
+                    <option value="3">03</option>
+                    <option value="4">04</option>
+                    <option value="5">05</option>
+                    <option value="6">06</option>
+                    <option value="7">07</option>
+                    <option value="8">08</option>
+                    <option value="9">09</option>
+                    <option value="10">10</option>
+                </select>
             </div>
-            <div class="caixa_anuncio">
-                <img src="../Imagens/IMG/Voos/voos05.jpg" class="imagem_anuncio"/>
-                <p>ROMA</p>
-            </div>
+
+            <input type="submit" value="Procurar Passagens" class="button">
+
+        </form>
+    </section>
+
+    
+    <P class="titulo_anuncio">DESTINOS EM ALTA</P>
+    <div class="anuncios">
+        <div class="caixa_anuncio">
+            <img src="../Imagens/IMG/Voos/voos01.jpg" class="imagem_anuncio"/>
+            <p>SALVADOR</p>
         </div>
-        <P class="titulo_anuncio">DESTINOS EM ALTA</P>
-        <div class="anuncios">
-            <div class="caixa_anuncio">
-                <img src="../Imagens/IMG/Voos/voos06.jpeg" class="imagem_anuncio"/>
-                <p>SALVADOR</p>
-            </div>
-            <div class="caixa_anuncio">
-                <img src="../Imagens/IMG/Voos/voos07.png" class="imagem_anuncio"/>
-                <p>PORTO DE GALINHAS</p>
-            </div>
-            <div class="caixa_anuncio">
-                <img src="../Imagens/IMG/Voos/voos08.jpg" class="imagem_anuncio"/>
-                <p>PARIS</p>
-            </div>
-            <div class="caixa_anuncio">
-                <img src="../Imagens/IMG/Voos/voos09.jpeg" class="imagem_anuncio"/>
-                <p>NOVA IORQUE</p>
-            </div>
-            <div class="caixa_anuncio">
-                <img src="../Imagens/IMG/Voos/voos10.jpeg" class="imagem_anuncio"/>
-                <p>ROMA</p>
-            </div>
+        <div class="caixa_anuncio">
+            <img src="../Imagens/IMG/Voos/voos02.jpg" class="imagem_anuncio"/>
+            <p>PORTO DE GALINHAS</p>
         </div>
+        <div class="caixa_anuncio">
+            <img src="../Imagens/IMG/Voos/voos03.jpg" class="imagem_anuncio"/>
+            <p>PARIS</p>
+        </div>
+        <div class="caixa_anuncio">
+            <img src="../Imagens/IMG/Voos/voos04.jpg" class="imagem_anuncio"/>
+            <p>NOVA IORQUE</p>
+        </div>
+        <div class="caixa_anuncio">
+            <img src="../Imagens/IMG/Voos/voos05.jpg" class="imagem_anuncio"/>
+            <p>ROMA</p>
+        </div>
+    </div>
+    <P class="titulo_anuncio">DESTINOS EM ALTA</P>
+    <div class="anuncios">
+        <div class="caixa_anuncio">
+            <img src="../Imagens/IMG/Voos/voos06.jpeg" class="imagem_anuncio"/>
+            <p>SALVADOR</p>
+        </div>
+        <div class="caixa_anuncio">
+            <img src="../Imagens/IMG/Voos/voos07.png" class="imagem_anuncio"/>
+            <p>PORTO DE GALINHAS</p>
+        </div>
+        <div class="caixa_anuncio">
+            <img src="../Imagens/IMG/Voos/voos08.jpg" class="imagem_anuncio"/>
+            <p>PARIS</p>
+        </div>
+        <div class="caixa_anuncio">
+            <img src="../Imagens/IMG/Voos/voos09.jpeg" class="imagem_anuncio"/>
+            <p>NOVA IORQUE</p>
+        </div>
+        <div class="caixa_anuncio">
+            <img src="../Imagens/IMG/Voos/voos10.jpeg" class="imagem_anuncio"/>
+            <p>ROMA</p>
+        </div>
+    </div>
 
-    </main>
+</main>
         
     <footer>
 
