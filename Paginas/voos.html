@@ -51,34 +51,40 @@
 
             <div class="origem">
                 <label for="origem">Origem</label>
-                <input type="text" name="origemdestino" id="origem" class="local_input" placeholder="Aeroporto de Origem">
+                <input type="text" list="aeroportos" name="origemdestino" id="origem" class="local_input" placeholder="Aeroporto de Origem">
             </div>
 
             <img src="../Imagens/IMG/Voos/aviao_de_papel.png" height="30px"/>
 
             <div class="destino">
                 <label for="destino">Destino</label>
-                <input type="text" name="origemdestino" id="destino" class="local_input" placeholder="Aeroporto de Destino">
+                <input type="search" list="aeroportos" name="origemdestino" id="destino" class="local_input" placeholder="Aeroporto de Destino">
             </div>
 
             <div class="passageiros">
                 <label for="quantpessoas">Passageiros</label>
-                <select name="pessoas" id="quantpessoas" class="num_input">
-                    <option value="1">01</option>
-                    <option value="2">02</option>
-                    <option value="3">03</option>
-                    <option value="4">04</option>
-                    <option value="5">05</option>
-                    <option value="6">06</option>
-                    <option value="7">07</option>
-                    <option value="8">08</option>
-                    <option value="9">09</option>
-                    <option value="10">10</option>
-                </select>
+                <input name="pessoas" type="number" id="quantpessoas" class="num_input">
             </div>
 
-            <input type="submit" value="Procurar Passagens" class="button">
+            <input id="procurar" type="submit" value="Procurar Passagens" class="button">
 
+
+            <datalist id="aeroportos">
+                <option value ="Guarulhos - Aerop. Inter.  Gov André Franco Montoro - GRU"></option>
+                <option value ="Lago Sul - Aeroporto Internacional Juscelino Kubitschek - BSB"></option>
+                <option value ="Rio de Janeiro - Aeroporto Internacional Antônio Carlos Jobim - GIG"></option>
+                <option value ="Vitória - Aeroporto Internacional Eurico de Aguiar Sales - VIX"></option>
+                <option value ="Salvador - Aeroporto Internacional Luís Eduardo Magalhães - SSA"></option>
+                <option value ="Confins - Aeroporto Internacional Tancredo Neves - CNF"></option>
+                <option value ="Fortaleza - Aeroporto Internacional Pinto Martins - FOR"></option>
+                <option value ="Manaus - Aeroporto Internacional Eduardo Gomes - MAO"></option>
+                <option value ="São Luís - Aeroporto Internacional Marechal Hugo da Cunha Machado - SLZ"></option>
+                <option value ="Porto Alegre - Aeroporto Internacional Salgado Filho - POA"></option>
+                <option value ="Recife - Aeroporto Internacional Gilberto Freyre - REC"></option>
+                <option value ="São José dos Pinhais - Aeroporto Internacional de Curitiba - CWB"></option>
+                <option value ="Belém - Aeroporto Internacional  Júlio Cezar Ribeiro - BEL"></option>
+
+            </datalist>
         </form>
     </section>
 

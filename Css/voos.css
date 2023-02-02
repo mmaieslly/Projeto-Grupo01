@@ -179,6 +179,8 @@ form strong{
   align-items: center;
 }
 
+
+
 .local_input{
   border-radius: 14px;
   height: 30px;
@@ -218,6 +220,11 @@ form strong{
   cursor: pointer;
 }
 
+input{
+  text-align: center;
+  font-size: 15px;
+  color:rgba(0, 0, 0, 0.51)
+}
 /* ---------------------------*/
 
 .anuncios{
