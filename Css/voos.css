@@ -309,7 +309,9 @@ footer div ul{
 
 
 
-
+#resultado_voo{
+  display: none;
+}
 
 
 /*FORMULARIO DE PESQUISA*/
