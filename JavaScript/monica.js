@@ -7,6 +7,7 @@ function aparecer(elemento){
 }
 
 
+
 /*ESCONDER DATA DE VOLTA EM VOO SÓ DE IDA*/
 let idaVolta = document.getElementById("switch-shadow");
 let volta = document.getElementById("volta");
@@ -43,12 +44,38 @@ destino.addEventListener("keyup", (e)=>{
     }
 })
 
-let procurar = document.getElementById("procurar");
 
-procurar.addEventListener("click", (e)=>{
-    if(idaVolta.checked == false){
-        if(dataIda == ""){
-            alert("data de ida!")
-        }
+
+/*PAGINA DE RESULTADOS*/
+let pesquisarVoo = document.getElementById("pesquisar_voo")
+let resultadoVoo = document.getElementById("resultado_voo")
+let btnProcurar = document.getElementById("procurar")
+let quantpessoas = document.getElementById("quantpessoas")
+let sOrigem = document.getElementById("SOrigem");
+let sDestino = document.getElementById("SDestino");
+let sIda = document.getElementById("SIda");
+let sVolta = document.getElementById("SVolta");
+let sPassageiros = document.getElementById("SPassageiros");
+
+btnProcurar.addEventListener("click", (e)=>{
+    if (origem.value === "" || destino.value === "" || quantpessoas.value === ""){
+        alert("Algum item não foi preenchido corretamente, confira novamente!")
+    }else{
+        sumir(pesquisarVoo);
+        aparecer(resultadoVoo); 
+        sOrigem.innerText = origem.value;
+        sDestino.innerText = destino.value;
+        sIda.innerText = dataIda.value;
+        sVolta.innerText = volta.value;
+        sPassageiros.innerText = quantpessoas.value
     }
+})
+
+/*PAGINA DE PESQUISA*/
+let btnVoltar = document.getElementById("btn")
+
+btnVoltar.addEventListener("click", (e)=>{
+    sumir(resultadoVoo);
+    aparecer(pesquisarVoo); 
+    
 })

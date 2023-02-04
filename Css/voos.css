@@ -46,7 +46,7 @@ nav ul{
 }
 
 /*FORMULARIO DE PESQUISA*/
-section{
+#pesquisar_voo section{
   background-image: url(../Imagens/IMG/Voos/banner.jpg);
   background-repeat: no-repeat; 
   background-size: cover;
@@ -57,7 +57,7 @@ section{
   align-items: center;
 }
 
-form{
+#pesquisar_voo form{
   background: #f8f8f8 ;
   font-size: 20px;
   color: #585858;
@@ -70,7 +70,7 @@ form{
   align-items: center;
 }
 
-form strong{
+#pesquisar_voo form strong{
   font-family: 'Bebas Neue', cursive;
   font-size: 36px;
   font-weight: 100;
@@ -79,7 +79,7 @@ form strong{
 }
 
 /*Botão Estilo iOS*/
-.switch__container {
+#pesquisar_voo .switch__container {
   margin: 0 50px;
   width: auto;
   height: 20px;
@@ -88,13 +88,13 @@ form strong{
   gap: 10px;
 }
 
-.switch {
+#pesquisar_voo .switch {
   visibility: hidden;
   position: absolute;
   margin-left: -9999px;
 }
 
-.switch + label {
+#pesquisar_voo .switch + label {
   display: block;
   position: relative;
   cursor: pointer;
@@ -102,7 +102,7 @@ form strong{
   user-select: none;
 }
 
-.switch--shadow + label {
+#pesquisar_voo .switch--shadow + label {
   padding: 2px;
   width: 50px;
   height: 25px;
@@ -110,8 +110,8 @@ form strong{
   border-radius: 60px;
 }
 
-.switch--shadow + label:before,
-.switch--shadow + label:after {
+#pesquisar_voo .switch--shadow + label:before,
+#pesquisar_voo .switch--shadow + label:after {
   display: block;
   position: absolute;
   top: 1px;
@@ -120,14 +120,14 @@ form strong{
   content: "";
 }
 
-.switch--shadow + label:before {
+#pesquisar_voo .switch--shadow + label:before {
   right: 1px;
   background-color: #f1f1f1;
   border-radius: 60px;
   transition: background 0.4s;
 }
 
-.switch--shadow + label:after {
+#pesquisar_voo .switch--shadow + label:after {
   width: 25px;
   background-color: #fff;
   border-radius: 100%;
@@ -135,27 +135,27 @@ form strong{
   transition: all 0.4s;
 }
 
-.switch--shadow:checked + label:before {
+#pesquisar_voo .switch--shadow:checked + label:before {
   background-color: #ff914d;
 }
 
-.switch--shadow:checked + label:after {
+#pesquisar_voo .switch--shadow:checked + label:after {
   transform: translateX(23px);
 }
 
 /* Datas */
-#espaco{
+#pesquisar_voo #espaco{
   display: none;
 }
 
-.ida_volta{
+#pesquisar_voo .ida_volta{
   display: flex;
   gap: 10px;
   align-items: center;
   justify-content: center;
 }
 
-.data_input{
+#pesquisar_voo .data_input{
   border-radius: 14px;
   height: 30px;
   width: 150px;
@@ -164,14 +164,14 @@ form strong{
 }
 
 /* Local */
-.origem{
+#pesquisar_voo .origem{
   display: flex;
   gap: 10px;
   display: flex;
   align-items: center;
 }
 
-.destino{
+#pesquisar_voo .destino{
   margin-right: 25px;
   display: flex;
   gap: 10px;
@@ -181,7 +181,7 @@ form strong{
 
 
 
-.local_input{
+#pesquisar_voo .local_input{
   border-radius: 14px;
   height: 30px;
   width: 250px;
@@ -190,7 +190,7 @@ form strong{
   align-items: center;
 }
 
-.num_input{
+#pesquisar_voo .num_input{
   border-radius: 14px;
   height: 30px;
   width: 60px;
@@ -200,7 +200,7 @@ form strong{
   cursor: pointer;
 }
 
-.passageiros{
+#pesquisar_voo .passageiros{
   display: flex;
   gap: 10px;
   display: flex;
@@ -208,7 +208,7 @@ form strong{
   margin-right: 25px;
 }
 
-.button{
+#pesquisar_voo .button{
   background-color: #ff914d;
   color: white;
   font-weight: bold;
@@ -220,28 +220,28 @@ form strong{
   cursor: pointer;
 }
 
-input{
+#pesquisar_voo input{
   text-align: center;
   font-size: 15px;
   color:rgba(0, 0, 0, 0.51)
 }
 /* ---------------------------*/
 
-.anuncios{
+#pesquisar_voo .anuncios{
   display: flex;
   justify-content: space-evenly;
   margin: 0 6rem;
   flex-wrap: wrap;
 }
 
-.titulo_anuncio{
+#pesquisar_voo .titulo_anuncio{
   display: block;
   text-align: center;
   background-color: #ff914d;
   color: white;
 }
 
-.caixa_anuncio{
+#pesquisar_voo .caixa_anuncio{
   text-align: center;
   background-color: #efeae4;
   border-radius: 8px;
@@ -249,7 +249,7 @@ input{
   margin-bottom: 20px;
 }
 
-.imagem_anuncio{
+#pesquisar_voo .imagem_anuncio{
   height: 13rem;
   width: 19rem;
   cursor: pointer;
@@ -301,4 +301,154 @@ footer div ul{
 
 .branco{
   width: 600px;
+}
+
+
+
+
+
+
+
+
+
+
+/*FORMULARIO DE PESQUISA*/
+#resultado_voo section{
+  background-image: url(../Imagens/IMG/Voos/banner.jpg);
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center 60%;
+  height: 100PX;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#resultado_voo section div{
+  background: #f8f8f8 ;
+  font-size: 12px;
+  color: #585858;
+  padding: 0.5em;
+  padding-right: 0;
+  border-radius: 12px;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+#resultado_voo .resultado{
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#resultado_voo .resultado p{
+  justify-content: left;
+  font-size: 12px;
+}
+
+#resultado_voo .resultado span{
+  font-size: 20px;
+  
+}
+
+#resultado_voo #btn{
+  display: flex;
+  background-color: #ff914d;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  height: 30px;
+  width: 500px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+
+/* ---------------------------*/
+
+#resultado_voo .titulo_anuncio{
+  display: block;
+  text-align: center;
+  background-color: #ff914d;
+  color: white;
+}
+
+#resultado_voo .anuncios{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+#resultado_voo .caixa_anuncio{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 15px;
+}
+
+#resultado_voo .caixa_anuncio div{
+  background-color: #efeae4;
+  border-radius: 8px;
+  justify-content: center;
+}
+
+#resultado_voo .caixa_anuncio img{
+  border-radius: 8px 8px 0px 0px;
+}
+
+#resultado_voo .caixa_anuncio p{
+  font-size: 17.5px;
+  display: flex;
+  justify-content: center;
+  color: #545454;
+  padding: 10px;
+  font-weight: bold;
+}
+
+#resultado_voo .preco{
+  font-size: 17.5px;
+  display: flex;
+  justify-content: center;
+  color: #545454;
+  padding: 10px;
+  margin-top: 25px;
+}
+
+#resultado_voo .caixa_anuncio h3{
+  display: flex;
+  color: #000000;
+  font-size: 23px;
+  justify-content: center;
+  padding: 2px 10px;
+}
+
+#resultado_voo .caixa_anuncio small{
+  display: flex;
+  color: #777068;
+  font-size: 13px;
+  justify-content: center;
+  padding: 0px 20px;
+}
+
+#resultado_voo .caixa_anuncio button{
+  display: flex;
+  background-color: #ff914d;
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  height: 31px;
+  width: 140px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 25px 0px 25px;
 }
