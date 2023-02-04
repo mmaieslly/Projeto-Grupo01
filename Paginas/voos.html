@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bora Decolar - Voos</title>
     <link href="../Css/voos.css" rel="stylesheet">
-    <script src="../JavaScript/monica.js"></script>
+    <script src="../JavaScript/monica.js" defer></script>
 </head>
 <body>
     <header>
@@ -27,57 +27,60 @@
         </nav>
     </header>
 
+    <section>
+        <form autocomplete="off">
+            <strong>PASSAGENS AEREAS</strong>
+            
+            <div class="switch__container">
+                <span>Ida</span>
+                <input id="switch-shadow" class="switch switch--shadow" type="checkbox">
+                <label for="switch-shadow"></label>
+                <span>Ida e Volta</span>
+            </div>
+
+            <div class="ida_volta">
+                <label for="dataIda">Partida</label>
+                <input type="date" name="datadevoos" id="dataIda" class="data_input">
+                <label for="dataVolta">Retorno</label>
+                <input type="date" name="datadevoos" id="dataVolta" class="data_input">
+            </div>
+
+            <div class="origem">
+                <label for="origem">Origem</label>
+                <input type="text" name="origemdestino" id="origem" class="local_input" placeholder="Aeroporto de Origem">
+                <ul class="list"></ul>
+            </div>
+
+            <img src="../Imagens/IMG/Voos/aviao_de_papel.png" height="30px"/>
+
+            <div class="destino">
+                <label for="destino">Destino</label>
+                <input type="text" name="origemdestino" id="destino" class="local_input" placeholder="Aeroporto de Destino">
+            </div>
+
+            <div class="passageiros">
+                <label for="quantpessoas">Passageiros</label>
+                <select name="pessoas" id="quantpessoas" class="num_input">
+                    <option value="1">01</option>
+                    <option value="2">02</option>
+                    <option value="3">03</option>
+                    <option value="4">04</option>
+                    <option value="5">05</option>
+                    <option value="6">06</option>
+                    <option value="7">07</option>
+                    <option value="8">08</option>
+                    <option value="9">09</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+
+            <input type="submit" value="Procurar Passagens" class="button">
+
+        </form>
+    </section>
+
     <main>
-        <section>
-            <form>
-                <strong>PASSAGENS AEREAS</strong>
-                
-                <div class="switch__container">
-                    <span>Ida</span>
-                    <input id="switch-shadow" class="switch switch--shadow" type="checkbox">
-                    <label for="switch-shadow"></label>
-                    <span>Ida e Volta</span>
-                </div>
 
-                <div class="ida_volta">
-                    <label for="dataIda">Partida</label>
-                    <input type="date" name="datadevoos" id="dataIda" class="data_input">
-                    <label for="dataVolta">Retorno</label>
-                    <input type="date" name="datadevoos" id="dataVolta" class="data_input">
-                </div>
-
-                <div class="origem">
-                    <label for="origem">Origem</label>
-                    <input type="text" name="origemdestino" id="origem" class="local_input" placeholder="Aeroporto de Origem">
-                </div>
-
-                <img src="../Imagens/IMG/Voos/aviao_de_papel.png" height="30px"/>
-
-                <div class="destino">
-                    <label for="destino">Destino</label>
-                    <input type="text" name="origemdestino" id="destino" class="local_input" placeholder="Aeroporto de Destino">
-                </div>
-
-                <div class="passageiros">
-                    <label for="quantpessoas">Passageiros</label>
-                    <select name="pessoas" id="quantpessoas" class="num_input">
-                        <option value="1">01</option>
-                        <option value="2">02</option>
-                        <option value="3">03</option>
-                        <option value="4">04</option>
-                        <option value="5">05</option>
-                        <option value="6">06</option>
-                        <option value="7">07</option>
-                        <option value="8">08</option>
-                        <option value="9">09</option>
-                        <option value="10">10</option>
-                    </select>
-                </div>
-
-                <input type="submit" value="Procurar Passagens" class="button">
-
-            </form>
-        </section>
 
         
         <P class="titulo_anuncio">DESTINOS EM ALTA</P>

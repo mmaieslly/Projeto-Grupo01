@@ -180,7 +180,34 @@ form strong{
   width: 250px;
   border-color: #dddddd;
   display: flex;
+  outline: none;
   align-items: center;
+  background-color: #ffffff;
+  border-bottom: 1px solid #645979;
+}
+
+
+div ul {
+  list-style: none;
+  position: relative;
+  font-size: 15px;
+  margin-left: 50px;
+  margin-top: 180px;
+}
+
+.list {
+  position: fixed;
+  width: 12%;
+  background-color: #ffffff;
+  border-radius: 0 0 5px 5px;
+}
+
+.list-items {
+  padding: 10px 5px;
+}
+
+.list-items:hover {
+  background-color: #dddddd;
 }
 
 .num_input{
