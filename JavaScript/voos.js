@@ -79,3 +79,12 @@ btnVoltar.addEventListener("click", (e)=>{
     aparecer(pesquisarVoo); 
     
 })
+
+
+/*PAGINA EM DESENVOLVIMENTO*/
+function iniciaModal(modalID){
+    const modal = document.getElementById(modalID);
+    modal.classList.add('mostrar');
+}
+
+iniciaModal('modal-alert')

@@ -22,7 +22,7 @@
                 <li><a href="promocao.html">Promoção</a></li>
                 <li><a href="hoteis.html">Hotéis</a></li>
                 <li><a href="pacotes.html">Pacotes</a></li>
-                <li><a href="voos.html">Voos</a></li>
+                <li><a href="voos.html" id="home">Voos</a></li>
                 <li><a href="Locacao_Carros.html">Aluguel de Carros</a></li>
                 <li><a href="quem_somos.html">Quem Somos</a></li>
                 <li>
@@ -119,6 +119,31 @@
         <div class="branco"></div>
 
       </footer>
+
+    <div id="modal-alert" class="modal-container">
+    <div class="modal">
+        <img src="../Imagens/IMG_Fixos/Bora_Decolar.png">
+        <form>
+            <input type="button" class="button" value="Ver progresso" id="fechar">
+            <input type="button" class="button" value="Voltar a Home" id="voltarhome">
+        </form>
+    </div>
+    </div>
+    <script>
+            let modal = document.getElementById("modal-alert");
+            let fechar = document.getElementById("fechar");
+            let voltarHome = document.getElementById("voltarhome");
+            let home = document.getElementById("home");
+
+            modal.classList.add("mostrar");
+
+            fechar.addEventListener("click", (e=>{
+                modal.classList.remove("mostrar")
+            }))
+            voltarHome.addEventListener("click", (e=>{
+                home.click()
+            }))
+    </script>
 </body>
 
 </html>
